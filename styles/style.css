@@ -199,6 +199,9 @@ footer p{
   .teams_img{
     min-width: 100%;
   }
+  footer p{
+    font-size: 0.6rem;
+  }
 }
 /* medium code */
 @media screen and (min-width: 577px) and (max-width: 992px) {
