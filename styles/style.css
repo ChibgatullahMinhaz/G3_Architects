@@ -148,6 +148,43 @@ header {
   line-height: 1.3rem;
   margin-bottom: 1rem;
 }
+/* features */
+.Features{
+    max-width: 992px;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+.Features_card{
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.1) ;
+    transition: all 0.3s ease-in-out;
+}
+.Features_card:hover{
+    scale: 1.1;
+    cursor: pointer;
+    box-shadow: 0 0 0 0.2px rgba(143, 11, 11, 0.1);
+}
+.Features_card h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--Dark1);
+}
+.features_image , .features_content{
+   flex: 1;
+}
+.features_image img{
+    max-width: 100%;
+}
+/* facts code  */
 .Facts{
     max-width: 992px;
     margin: 0 auto;
