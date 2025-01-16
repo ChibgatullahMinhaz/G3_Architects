@@ -26,6 +26,13 @@ html {
 }
 .btn {
   background-color: var(--btnPrimary);
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
 /* header */
 header {
@@ -53,6 +60,9 @@ header {
 .nav_list {
   margin-right: 2rem;
 }
+.nav_list:last-child {
+  margin-right: 0.2rem;
+}
 .nav_link {
   font-size: 1.2rem;
   color: var(--Dark2);
@@ -61,43 +71,91 @@ header {
 .nav_link:hover {
   color: var(--Dark1);
 }
+/* banner */
+.banner_content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.banner_title {
+  font-size: 4rem;
+  color: var(--Dark1);
+  font-weight: bold;
+  margin-top: 160px;
+  margin-bottom: 1.4rem;
+}
+.banner_description {
+  color: var(--Dark2);
+  margin-bottom: 1.5rem;
+}
+.explore {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.banner img {
+  margin: 0 auto;
+  max-width: 100%;
+}
 /* responsive code */
 /* small device */
 @media screen and (max-width: 576px) {
+  .btn {
+    padding: 0.6rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+  /* nav  */
   .navigation {
     justify-content: space-between;
-padding-top: 1rem;
+    padding-top: 1rem;
   }
   .brand {
     font-size: 1rem;
   }
   header {
     padding-left: 10px;
-    padding-right: 1px;
+    padding-right: 10px;
   }
-  .nav_list:last-child {
-    margin-right: 0.2rem;
-  }
+
   .nav_link {
     font-size: 0.6rem;
     color: var(--Dark2);
     transition: all 0.2s ease-in-out;
   }
+  /* banner */
+  .banner_title {
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+  .banner_description {
+    font-size: 0.7rem;
+  }
 }
 /* medium code */
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    header {
-        padding-left: 10px;
-        padding-right: 1px;
+    .btn {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+        font-weight: 600;
       }
-    .navigation {
-      
+  /* nav */
+  header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .navigation {
     padding-top: 1rem;
-      }
-    .brand {
-        font-size: 2rem;
-      }
-      .nav_list:last-child {
-        margin-right: 0.2rem;
-      }
+  }
+  .brand {
+    font-size: 2rem;
+  }
+  /* banner */
+  .banner_title {
+    font-size: 3rem;
+    margin-top: 4rem;
+
+  }
+  .banner_description {
+    font-size: 1rem;
+  }
 }
