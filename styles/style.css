@@ -162,9 +162,9 @@ header {
     color: var(--Dark2);
 }
 .Facts_cards{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     padding: 2rem;
 }
 .card{
@@ -273,12 +273,15 @@ footer p {
   .teams_img {
     min-width: 100%;
   }
+ .Facts_cards{
+    grid-template-columns: repeat(1, 1fr);
+ }
   .sponsorship{
     margin: 0.4rem 0;
   }
   .sponsorship img {
-    max-width: 30px;
-   margin-bottom: 1rem;
+    max-width: 45px;
+   margin-bottom: 0;
    margin-top: 1rem;
   }
   .spon_decription{
@@ -333,6 +336,9 @@ footer p {
   }
   .teams_img {
     min-width: 100%;
+  }
+  .Facts_cards{
+    grid-template-columns: repeat(2, 1fr);
   }
   .fact_content p, h1{
     text-align: center;
