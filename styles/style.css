@@ -230,6 +230,21 @@ footer p {
   .teams_img {
     min-width: 100%;
   }
+  .sponsorship{
+    margin: 0.4rem 0;
+  }
+  .sponsorship img {
+    max-width: 30px;
+   margin-bottom: 1rem;
+   margin-top: 1rem;
+  }
+  .spon_decription{
+    font-size: 0.9rem;
+  }
+  .spon_title{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
   footer p {
     font-size: 0.6rem;
   }
