@@ -148,7 +148,17 @@ color: var(--Dark2);
 line-height: 1.3rem;
 margin-bottom: 1rem;
 }
-
+/* footer start */
+footer{
+    max-width: 1000px;
+    background-color: var(--bgPrimary);
+    text-align: center;
+    margin: 3rem auto;
+}
+footer p{
+    padding: 1rem;
+    color: var(--Dark2);
+}
 /* responsive code */
 /* small device */
 @media screen and (max-width: 576px) {
