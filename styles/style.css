@@ -7,6 +7,8 @@
   --Dark1: #131313;
   --Dark2: #727272;
   --Dark3: #727272;
+  --btnHover: blueviolet;
+  --fontfamily: "Work Sans", serif;
 }
 /* universel code / reset code */
 * {
@@ -25,7 +27,7 @@ html {
   scroll-behavior: smooth;
   scrollbar-width: 4px;
 }
-.btn {
+.btns {
   background-color: var(--btnPrimary);
   color: #fff;
   padding: 1rem;
@@ -36,8 +38,8 @@ html {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-.btn:hover {
-  background-color: var(--Dark1);
+.btns:hover {
+  background-color:  var(--btnHover);
 }
 /* header */
 header {
@@ -53,14 +55,16 @@ header {
   align-items: center;
   padding-top: 3rem;
 }
+.custom_nav{
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+}
 .brand {
-  font-size: 2.6rem;
   font-weight: bold;
   color: var(--Dark1);
   cursor: pointer;
-}
-.nav_item {
-  display: flex;
+  margin: 0;
 }
 .nav_list {
   margin-right: 2rem;
@@ -69,7 +73,7 @@ header {
   margin-right: 0.2rem;
 }
 .nav_link {
-  font-size: 1.2rem;
+  font-family: var(--fontfamily);
   color: var(--Dark2);
   transition: all 0.2s ease-in-out;
 }
