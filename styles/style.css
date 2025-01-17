@@ -204,9 +204,10 @@ margin-bottom: 2rem;
 }
 
 .features_image img{
-    width: 100%;
+    max-width: 100%;
     min-height: 100%;
-    margin-left: 50px;
+   margin-left: 80px;
+    
 }
 .Experience{
 font-size: 1.5rem;
@@ -217,9 +218,8 @@ font-weight: 400;
     color: white;
     font-weight: bold;
 }
-.btnBadge{
-margin-top: -60px;
-margin-left: -50px;
+.Badge{
+margin-top: -70px;
 }
 /* facts code  */
 .Facts{
@@ -347,6 +347,46 @@ footer p {
   .teams_img {
     min-width: 100%;
   }
+  .teams_content_title{
+    text-align: left;
+    
+  }
+  .dark3 {
+    color: var(--Dark3);
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .dark {
+    color: var(--Dark1);
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .red {
+    color: var(--btnPrimary);
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .Features{
+    flex-direction: column;
+  }
+  .features_image img{
+    margin: 0;
+    min-width: 100%;
+    padding: 0.4rem;
+  }
+  .Features_card{
+    margin: 0.4rem;
+  }
+  .features_title{
+    font-size: 2.5rem;
+    margin-right: 0.9rem;
+  }
+  .features_description{
+    text-align: center
+  }
+  .Badge{
+    margin-left: 25%;
+  }
  .Facts_cards{
     grid-template-columns: repeat(1, 1fr);
  }
@@ -397,6 +437,20 @@ footer p {
   .brand {
     font-size: 2rem;
   }
+  .Features{
+    flex-direction: column-reverse;
+  }
+  .features_image img{
+    margin: 0;
+    min-width: 100%;
+    padding: 0.4rem;
+  }
+  .Features_card{
+    margin: 0.4rem;
+  }
+  .Badge{
+    margin-left:35% ;
+  }
   /* banner */
   .banner_title {
     font-size: 3rem;
@@ -410,6 +464,9 @@ footer p {
   }
   .teams_img {
     min-width: 100%;
+  }
+  .explore, .teams_description, .teams_content_title{
+    text-align: left;
   }
   .Facts_cards{
     grid-template-columns: repeat(2, 1fr);
